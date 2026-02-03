@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Simbolik Debug",
+      "type": "simbolik", // 必须严格为小写，无拼写错误
+      "request": "launch",
+      "program": "${file}",
+      "target": "forge",
+      "args": ["test", "--match-test", "*"] // 匹配所有测试函数
+    }
+  ]
+}
