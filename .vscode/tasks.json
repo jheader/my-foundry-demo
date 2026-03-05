@@ -1,0 +1,20 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "id": "shell,forge,build,src/Counter.sol,",
+            "problemMatcher": [],
+            "label": "simbolik: forge",
+            // 核心修复：添加 command 字段，指定要执行的 Forge 命令（比如构建合约）
+            "command": "forge build",
+            // 可选：添加任务描述，方便识别
+            "description": "Simbolik 调试前先执行 Forge 构建",
+            // 可选：设置任务分组，方便在命令面板调用
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
